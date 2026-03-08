@@ -20,6 +20,9 @@ struct RealTimePriceTrackerRootView: View {
 
     var body: some View {
         NavigationStack(path: $path) {
+            FeedView(viewModel: viewModel) { symbol in
+                path.append(symbol)
+            }
         }
         .onOpenURL { url in
             guard url.scheme == "stocks", url.host == "symbol" else { return }
