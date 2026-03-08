@@ -29,9 +29,22 @@
 		A0BA02412F5D8D58006998F0 /* RealTimePriceTrackerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealTimePriceTrackerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A0BA028E2F5E2833006998F0 /* Exceptions for "RealTimePriceTrackerApp" folder in "RealTimePriceTrackerApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A0BA02292F5D8D54006998F0 /* RealTimePriceTrackerApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A0BA022C2F5D8D54006998F0 /* RealTimePriceTrackerApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A0BA028E2F5E2833006998F0 /* Exceptions for "RealTimePriceTrackerApp" folder in "RealTimePriceTrackerApp" target */,
+			);
 			path = RealTimePriceTrackerApp;
 			sourceTree = "<group>";
 		};
