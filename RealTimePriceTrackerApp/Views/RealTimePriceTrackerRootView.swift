@@ -23,6 +23,13 @@ struct RealTimePriceTrackerRootView: View {
             FeedView(viewModel: viewModel) { symbol in
                 path.append(symbol)
             }
+            .navigationDestination(for: String.self) { symbol in
+                if let quote = viewModel.quote(for: symbol) {
+                    SymbolDetailView(viewModel: SymbolDetailViewModel(quote: quote))
+                } else {
+                    Text("Symbol not found")
+                }
+            }
         }
         .onOpenURL { url in
             guard url.scheme == "stocks", url.host == "symbol" else { return }
